@@ -43,7 +43,7 @@
     <link href="http://yoursite.com/2018/03/08/%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%9C%A8%E9%A9%AC%E7%9A%84%E5%88%B6%E4%BD%9C/"/>
     <id>http://yoursite.com/2018/03/08/一句话木马的制作/</id>
     <published>2018-03-08T09:34:42.000Z</published>
-    <updated>2018-03-08T09:35:03.156Z</updated>
+    <updated>2018-03-08T13:41:49.086Z</updated>
     
     <content type="html"><![CDATA[<p>&#160; &#160; &#160; &#160;制作一句话木马的方法非常多，目前已经有安全研究人员设计出了专业的制作软件：Edjpgcom。<br>&#160; &#160; &#160; &#160;①Edjpgcom的使用方法非常简单：<strong>把一张正常的图片拖到Edjpgcom.exe程序中，填写相应的一句话代码就可以制作图片一句话木马，</strong>如图<br><img src="http://upload-images.jianshu.io/upload_images/6289203-d15b6de84f68e400.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>&#160; &#160; &#160; &#160;在插入一句话木马之后，以文本的方式打开图片就可以看到一句话木马代码了（用记事本打开，查找一下就行）。如图。<br> <img src="http://upload-images.jianshu.io/upload_images/6289203-dfaebcec3372e783.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中间修改了一下文件名为12.png"></p><p>注：如果直接以文本的方式打开图片插入一句话，可能会造成文件损坏。</p><p>②第二种方法：打开010编辑器，讲jpg图片拖入，将写好的一句话，粘贴到尾部。如图：<br><img src="http://upload-images.jianshu.io/upload_images/6289203-c1d4ddef7c6236ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="010编辑器.png"></p><p>将文件后缀改为txt，查看，如图：<br><img src="http://upload-images.jianshu.io/upload_images/6289203-b1944d1b25de9633.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p><p>这里就成功插入一句话木马了。</p>]]></content>
     
