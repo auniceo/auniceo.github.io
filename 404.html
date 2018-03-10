@@ -188,7 +188,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -208,7 +208,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            Categories
+            Kategorien
           </a>
         </li>
       
@@ -218,7 +218,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -241,7 +241,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            Search
+            Suche
           </a>
         </li>
       
@@ -338,39 +338,11 @@
           
 
   
-  <div onclick="showGitment()" id="gitment_title" class="gitment_title">显示 Gitment 评论</div>
-  <div id="container" style="display:none"></div>
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-  <script>
-  const myTheme = {
-    render(state, instance) {
-      const container = document.createElement('div');
-      container.lang = "en-US";
-      container.className = 'gitment-container gitment-root-container';
-      container.appendChild(instance.renderHeader(state, instance));
-      container.appendChild(instance.renderEditor(state, instance));
-      container.appendChild(instance.renderComments(state, instance));
-      container.appendChild(instance.renderFooter(state, instance));
-      return container;
-    }
-  }
-  function showGitment() {
-    $("#gitment_title").attr("style", "display:none");
-    $("#container").attr("style", "").addClass("gitment_container");
-    var gitment = new Gitment({
-      id: window.location.pathname,
-      theme: myTheme,
-      owner: 'Auniceo',
-      repo: 'Auniceo.github.io',
-      oauth: {
-        client_id: '6d96d091f8e12c9e43db',
-        client_secret: 'c211efa201d12284b137555dafdd3ec87524c597'
-      }
-    });
-    gitment.render('container');
-  }
-  </script>
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -416,7 +388,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
             
@@ -429,7 +401,7 @@
               <div class="site-state-item site-state-tags">
                 
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">tags</span>
+                  <span class="site-state-item-name">Tags</span>
                 
               </div>
             
@@ -551,7 +523,7 @@
 
 
 
-  <!-- div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <!-- div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -718,8 +690,8 @@
 <!-- LOCAL: You can save these files to your site and update links -->
     
         
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
     
 <!-- END LOCAL -->
 
@@ -728,10 +700,12 @@
     
       <script type="text/javascript">
       function renderGitment(){
-        var gitment = new Gitment({
+        var gitment = new Gitmint({
             id: window.location.pathname, 
-            owner: '',
-            repo: '',
+            owner: 'Auniceo',
+            repo: 'Auniceo.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
