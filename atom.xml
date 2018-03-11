@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>木子哥哥的博客地带</title>
+  <title>Muzi&#39;s brother&#39;s blog.</title>
   
-  
+  <subtitle>God says the world needs light, and I am born.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://auniceo.work/"/>
@@ -10,7 +10,7 @@
   <id>http://auniceo.work/</id>
   
   <author>
-    <name>Auniceo</name>
+    <name>Muzi</name>
     
   </author>
   
